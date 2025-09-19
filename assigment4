@@ -1,0 +1,125 @@
+# 4-1
+pizzas = ["pepperoni", "margherita", "hawaiian"]
+for pizza in pizzas:
+    print(pizza)
+print("\nAhora con frases completas:")
+for pizza in pizzas:
+    print(f"I like {pizza} pizza.")
+print("I really love pizza!\n")
+# 4-2
+animals = ["dog", "cat", "rabbit"]
+for animal in animals:
+    print(animal)
+print("\nAhora con frases completas:")
+for animal in animals:
+    print(f"A {animal} would make a great pet.")
+print("Any of these animals would make a great pet.")
+# 4-3
+print("4-3. Counting to Twenty")
+for number in range(1, 21):
+    print(number)
+print("\n4-4. One Million (se muestra solo del 1 al 20 para evitar saturar la salida)")
+# 4-4
+for number in range(1, 21):
+    print(number)
+print("\n4-5. Summing a Million")
+# 4-5
+numbers = list(range(1, 1000001))
+print("Min:", min(numbers))
+print("Max:", max(numbers))
+print("Sum:", sum(numbers))
+# 4-6
+odd_numbers = list(range(1, 21, 2))
+for number in odd_numbers:
+    print(number)
+print("\n4-7. Threes")
+# 4-7
+threes = list(range(3, 31, 3))
+for number in threes:
+    print(number)
+print("\n4-8. Cubes")
+# 4-8 
+cubes = []
+for number in range(1, 11):
+    cubes.append(number ** 3)
+for cube in cubes:
+    print(cube)
+print("\n4-9. Cube Comprehension")
+# 4-9
+cubes_comp = [number ** 3 for number in range(1, 11)]
+for cube in cubes_comp:
+    print(cube)
+# 4-10
+pizzas = ["pepperoni", "margherita", "hawaiian", "bbq chicken", "veggie"]
+print("The first three items in the list are:")
+print(pizzas[:3])
+middle_index = len(pizzas) // 2
+print("Three items from the middle of the list are:")
+print(pizzas[middle_index-1:middle_index+2])
+print("The last three items in the list are:")
+print(pizzas[-3:])
+print("\n")
+# 4-11
+friend_pizzas = pizzas[:]
+pizzas.append("four cheese")
+friend_pizzas.append("meat lovers")
+print("My favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
+print("\n")
+# 4-12
+foods = ["pizza", "sushi", "tacos", "burger", "salad"]
+more_foods = ["pasta", "ramen", "steak"]
+print("Foods list:")
+for food in foods:
+    print(food)
+print("\nMore foods list:")
+for food in more_foods:
+    print(food)
+# 4-13
+buffet_foods = ("pizza", "sushi", "tacos", "burger", "salad")
+print("Foods offered at the buffet:")
+for food in buffet_foods:
+    print(food)
+print("\nIntentando modificar un item (debería fallar):")
+try:
+    buffet_foods[0] = "pasta"
+except TypeError as e:
+    print("Error:", e)
+print("\nBuffet menu changed:")
+buffet_foods = ("pasta", "ramen", "tacos", "salmon", "salad")
+for food in buffet_foods:
+    print(food)
+# 4-14
+# Esta sección no requiere código. Se recomienda:
+# Usar 4 espacios por indentación
+# Mantener líneas < 80 caracteres
+# Nombrar variables y funciones en snake_case
+# Evitar espacios o líneas en blanco innecesarias
+# Importar módulos en líneas separadas
+# 4-15
+# primera parte
+pizzas = ["pepperoni", "margherita", "hawaiian"]
+for pizza in pizzas:
+    print(f"I like {pizza} pizza.")
+friend_pizzas = pizzas[:]
+friend_pizzas.append("meat lovers")
+pizzas.append("four cheese")
+print("\nMy favorite pizzas are:")
+for pizza in pizzas:
+    print(pizza)
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
+# parte dos
+animals = ["dog", "cat", "rabbit"]
+for animal in animals:
+    print(f"A {animal} would make a great pet.")
+print("\nAny of these animals would make a great pet.")
+# parte tres
+cubes = [number ** 3 for number in range(1, 11)]
+for cube in cubes:
+    print(cube)
