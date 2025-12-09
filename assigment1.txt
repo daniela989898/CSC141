@@ -1,0 +1,20 @@
+1-1 
+I explored the official Python website (python.org) and found several sections that will be helpful as I progress in my learning:
+Documentation: Contains tutorials, the language guide, standard libraries, and comprehensive references. This will be essential when you start writing more code.
+Community: Shows events, user groups, and conferences like PyCon; it's motivating to see the global community.
+Success Stories: Presents real-world examples of Python being used in science, artificial intelligence, education, business, and more.
+
+1-2
+correct: print("Hello, world!")
+error: pritn("Hello, world!") NameError: Python says that printn is not defined because the function name is misspelled.
+typo that doesn’t generate an error: print("Helo, world!"). Python does not check for spelling within text strings. Quotation marks indicate that it is just text, not code.
+
+1-3
+A personal AI assistant
+An app that can: answer questions,set reminders,read emails,and automate daily tasks.
+
+A bot that analyzes social media
+That collects data from Twitter/TikTok/Instagram and: displays trends,analyzes hashtags, and generates visual reports.
+
+An RPG-style adventure game
+Initially simple (text-based), but later: maps, inventories, missions, characters with abilities, and eventually 2D or 3D graphics.
